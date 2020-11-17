@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Git Project</string>
+
+
+    <string name="sample_name">Git Clone</string>
+    <string name="sample_username">pintuag</string>
+    <string name="sample_user_profile_url">https://github.com/pintuag</string>
+    <string name="data_not_found">Data Not Found</string>
+
+    <string name="user_profile_text_url">User Profile Url</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_url">Project Url</string>
+    <string name="project_description">Project Description</string>
+    <string name="claim_date">Claim Date:</string>
+    <string name="from_district">From District:</string>
+    <string name="to_district">To District</string>
+    <string name="to_city">To City</string>
+    <string name="mode_of_travel">Mode of travel</string>
+    <string name="class_of_travel">Class of travel</string>
+    <string name="kms">Kms</string>
+    <string name="rate">Rate (in Rs.)</string>
+    <string name="remark">Remark</string>
+    <string name="expenses">Expenses</string>
+    <string name="add_claim_item">Add claim item</string>
+
+
+    <string-array name="languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>Node</item>
+        <item>C++</item>
+        <item>Ruby</item>
+    </string-array>
+
+</resources>
