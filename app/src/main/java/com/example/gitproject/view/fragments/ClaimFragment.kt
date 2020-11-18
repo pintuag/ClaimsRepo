@@ -3,6 +3,7 @@ package com.example.gitproject.view.fragments
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.example.gitproject.R
 import com.example.gitproject.models.dataModel.ClaimDummyModel
@@ -54,6 +55,7 @@ class ClaimFragment : BaseFragment(), ClaimsListAdapter.ItemClickListener {
             )
             claimDummyList.add(claimDummyModel);
             claimListAdapter.setClaimDateList(activity!!, claimDummyList, this)
+            activity!!.toast("Claim Added")
         }
     }
 
