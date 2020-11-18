@@ -6,7 +6,7 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/github_logo" />
+            android:src="@drawable/claim" />
 
     </item>
 
