@@ -8,8 +8,6 @@
 | Model             | Response       |
 | View              | Activity    |
 | ViewModel         | Business Logic                |
-| RxJava         | Api Call             |
-| LruCaching         | Image Caching               |
 
 ##### App Structure Explained
      Model            
@@ -22,7 +20,7 @@
   
      View Model
      
-     1. TrendingListViewModel- Business logic for getting data from api and sending it to activity.
+     1. ClaimListViewModel- Business logic for getting data from api and sending it to activity.
     
      
 #### Steps to Install app

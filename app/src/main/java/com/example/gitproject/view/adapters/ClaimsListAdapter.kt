@@ -6,18 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gitproject.R
-import com.example.gitproject.models.dataModel.Claim
+import com.example.gitproject.models.dataModel.ClaimDummyModel
 import kotlinx.android.synthetic.main.repo_recyclerview_item.view.*
 
 class ClaimsListAdapter : RecyclerView.Adapter<ClaimsListAdapter.RecyclerViewHolder>() {
 
     lateinit var context: Context
     lateinit var itemClickListener: ItemClickListener
-    var claimList = emptyList<Claim>()
+    var claimList = emptyList<ClaimDummyModel>()
 
-    fun setTrendingListData(
+    fun setClaimDateList(
         context: Context,
-        claimList: List<Claim>,
+        claimList: List<ClaimDummyModel>,
         itemClickListener: ItemClickListener
     ) {
         this.context = context
@@ -41,13 +41,10 @@ class ClaimsListAdapter : RecyclerView.Adapter<ClaimsListAdapter.RecyclerViewHol
 
         val claimListModel = claimList[position]
         holder.apply {
-
-            /*username.text = claimListModel.username
-            repoName.text = claimListModel.name
-
-            imageLoader.DisplayImage(claimListModel.avatar, R.drawable.placeholder, userProfile)*/
-
-            itemView.setOnClickListener {
+            claimType.text = claimListModel.name
+            claimDate.text = claimListModel.date
+            claimExpenses.text = claimListModel.expensesAmount
+            viewMore.setOnClickListener {
                 itemClickListener.itemClick(claimListModel)
             }
         }
@@ -57,9 +54,10 @@ class ClaimsListAdapter : RecyclerView.Adapter<ClaimsListAdapter.RecyclerViewHol
 
     inner class RecyclerViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        val username = view.username
-        val repoName = view.repoName
-        val userProfile = view.userProfile
+        val claimType = view.claimType
+        val claimDate = view.claimDate
+        val claimExpenses = view.expensesAmount
+        val viewMore = view.viewMoreText
 
     }
 
@@ -68,9 +66,6 @@ class ClaimsListAdapter : RecyclerView.Adapter<ClaimsListAdapter.RecyclerViewHol
     * Item click listener
     * */
     interface ItemClickListener {
-
-        fun itemClick(claimListModel: Claim)
+        fun itemClick(claimListModel: ClaimDummyModel)
     }
-
-
 }

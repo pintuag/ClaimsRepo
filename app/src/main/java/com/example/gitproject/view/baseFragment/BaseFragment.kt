@@ -46,15 +46,4 @@ abstract class BaseFragment : Fragment() {
         (activity as BaseActivity).apply { addFragment(fragment, backstack) }
     }
 
-
-    fun showToolbarBackButton() {
-        Constants.TOOLBAR_BUTTON_CLICK = true
-        (activity as AppCompatActivity).supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);
-    }
-
-    fun hideToolbarBackButton() {
-        Constants.TOOLBAR_BUTTON_CLICK = false
-        (activity as AppCompatActivity).supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_github);
-    }
-
 }

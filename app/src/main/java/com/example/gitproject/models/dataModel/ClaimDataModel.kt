@@ -44,3 +44,9 @@ data class Claimfieldoption(
     val name: String
 )
 
+data class ClaimDummyModel(
+    val name: String,
+    val date: String,
+    val expensesAmount: String
+)
+

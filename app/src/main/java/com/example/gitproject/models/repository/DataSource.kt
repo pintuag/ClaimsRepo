@@ -1,14 +1,10 @@
 package com.example.gitproject.models.repository
 
-import android.annotation.SuppressLint
 import com.example.gitproject.models.dataModel.ClaimsDataModel
 import com.example.gitproject.models.httpService.ResponseHandler
 import com.example.gitproject.models.httpService.Result
 import com.google.gson.Gson
 import org.json.JSONObject
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.io.IOException
 
 object DataSource : DataSourceCalls {
